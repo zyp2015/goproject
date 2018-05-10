@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form action="/login" method="post">
+    username:<input type="text" name="username" style="height: 100px;width: 50px">
+    password:<input type="password" name="password">
+    <input type="submit" value="login">
+    <select name="fruit">
+        <option value="apple">apple</option>
+        <option value="pear">pear</option>
+        <option value="xiaomi">xiaomi</option>
+    </select>
+    <input type="radio" name="sex" value="1" width="100px" height="50px">man
+    <input type="radio" name="sex" value="2">nv
+    <input type="hidden" name="token" value="{{.}}">
+    <input type="checkbox" name="interest" value="football">football
+    <input type="checkbox" name="interest" value="basketball">basketball
+    身份证:<input type="text" name="cardid" style="height: 10px;width: 150px">
+    <a href="upload">上传身份证</a>
+</form>
+
+</body>
+</html>
